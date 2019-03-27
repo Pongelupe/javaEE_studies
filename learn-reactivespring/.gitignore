@@ -27,3 +27,7 @@
 
 ### VS Code ###
 .vscode/
+/bin/
+/gradle/
+/gradlew
+/gradlew.bat
