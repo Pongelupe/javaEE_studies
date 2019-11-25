@@ -13,7 +13,7 @@ public class ContaTest {
 	public void testGetValorConta() {
 		Conta conta = new Conta(20, Month.DECEMBER);
 		
-		assertEquals(BigDecimal.valueOf(3300), conta.getValor());
+		assertEquals(BigDecimal.valueOf(3900.0), conta.getValor());
 	}
 
 }

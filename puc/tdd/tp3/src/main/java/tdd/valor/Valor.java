@@ -10,11 +10,10 @@ public abstract class Valor {
 	protected abstract BigDecimal getValor(BigDecimal valor);
 
 	public final BigDecimal getValor() {
-		Valor temp = next;
-		valor = this.getValor(valor);
+		Valor temp = this;
 		while (temp != null) {
 			valor = temp.getValor(valor);
-			temp = next.getNext();
+			temp = temp.getNext();
 		}
 		
 		return valor;

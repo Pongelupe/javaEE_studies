@@ -12,7 +12,7 @@ public class ValorImpostoTest {
 	public void testValorImposto() {
 		ValorImposto v = new ValorImposto();
 
-		assertEquals(BigDecimal.valueOf(130), v.getValor(BigDecimal.valueOf(100)));
+		assertEquals(BigDecimal.valueOf(130.0), v.getValor(BigDecimal.valueOf(100)));
 	}
 
 }
