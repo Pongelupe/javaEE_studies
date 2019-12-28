@@ -11,7 +11,7 @@ public class ValorServicoTest {
 	@Test
 	public void testValor() {
 		ValorServico valorServico = new ValorServico(100);
-		assertEquals(BigDecimal.valueOf(5001), valorServico.getValor(BigDecimal.ONE));
+		assertEquals(BigDecimal.valueOf(5001), valorServico.getValor(BigDecimal.ZERO));
 	}
 
 }

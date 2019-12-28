@@ -5,18 +5,18 @@ import java.math.BigDecimal;
 public abstract class Valor {
 
 	private Valor next;
-	private BigDecimal valor = BigDecimal.ZERO;
+	private BigDecimal valorReal = BigDecimal.ZERO;
 
 	protected abstract BigDecimal getValor(BigDecimal valor);
 
 	public final BigDecimal getValor() {
 		Valor temp = this;
 		while (temp != null) {
-			valor = temp.getValor(valor);
+			valorReal = temp.getValor(valorReal);
 			temp = temp.getNext();
 		}
 		
-		return valor;
+		return valorReal;
 	}
 
 	private Valor getNext() {

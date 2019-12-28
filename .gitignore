@@ -1,5 +1,5 @@
 .classpath
-target/**/*
+target/
 .settings
 .project
 
