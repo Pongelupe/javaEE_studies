@@ -1,4 +1,4 @@
-package br.com.pongelupe.kafka.tutorial2;
+package br.com.pongelupe.kafka.tutorial2.producer;
 
 import java.util.List;
 import java.util.Properties;
